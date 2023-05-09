@@ -15,12 +15,6 @@ variable "kms_key_deletion_window" {
   type        = number
 }
 
-variable "s3_bucket_acl" {
-  default     = "private"
-  description = ""
-  type        = string
-}
-
 variable "kms_key_alias" {
   description = "Alias for the KMS key"
   type        = string

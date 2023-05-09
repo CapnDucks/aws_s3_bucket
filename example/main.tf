@@ -4,5 +4,5 @@ module "s3_bucket" {
   bucket        = "my-globally-unique-named-bucket"
   force_destroy = true
   kms_key_alias = "mykmsalias"
-  s3_bucket_acl = "private"
+  #s3_bucket_acl = "private"
 }
