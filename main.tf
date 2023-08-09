@@ -7,6 +7,10 @@ module "kms" {
 resource "aws_s3_bucket" "this" {
   bucket        = var.bucket
   force_destroy = var.force_destroy
+
+  tags = merge(
+    var.tags
+  )
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "this" {

@@ -43,3 +43,9 @@ variable "restrict_public_buckets" {
   description = "Restrict public bucket policies for this bucket"
   type        = bool
 }
+
+variable "tags" {
+  type        = map(any)
+  default     = {}
+  description = "Tags for the resource"
+}
